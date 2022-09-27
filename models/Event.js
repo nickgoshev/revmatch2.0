@@ -29,10 +29,10 @@ Event.init(
     picture_path: {
       type: DataTypes.STRING,
     },
-    creator_id: {
+    user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'creator',
+        model: 'user',
         key: 'id',
       },
     },
